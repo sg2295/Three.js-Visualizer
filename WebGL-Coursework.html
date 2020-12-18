@@ -215,7 +215,7 @@
 						function (error) {console.log('An error happened');}
 				);
 
-				loader.load('http://gavriilidis.me/CM20219-WebGL-Coursework-2020-21/resources/island/scene.gltf', function (object) { // https://sketchfab.com/3d-models/map-gta5-f622784b2fa9453fb20821afb74a9cb6#download
+				loader.load('resources/island/scene.gltf', function (object) { // https://sketchfab.com/3d-models/map-gta5-f622784b2fa9453fb20821afb74a9cb6#download
 							island = object.scene;
 							island.scale.set(1/100,1/100,1/100);
 							island.translateOnAxis(new THREE.Vector3(0, 1, 0), -20);
