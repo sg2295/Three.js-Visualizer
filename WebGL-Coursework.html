@@ -109,18 +109,14 @@
 				drawCube(); // Draw the cube
 				drawModel(); // Draw the model (bunny)
 
-				// drawSkybox(); // Draw the two different sky-boxes (cubes)
-				// drawOtherModels(); // Draw other models (Island, planes)
+				drawSkybox(); // Draw the two different sky-boxes (cubes)
+				drawOtherModels(); // Draw other models (Island, planes)
 
                 // TO DO: Visualise the axes of the global coordinate system (requirement 2).
 				drawAxes();
 
-				var l = new THREE.DirectionalLight({color: 0xffffff});
-				l.position.set(2.5, 5, 2);
-				l.position.castShadow = true;
-				scene.add(l);
-				// scene.add(defaultLight);
-				// toggleLighting(); // Add more complex lighting (Requirement 4)
+				scene.add(defaultLight);
+				toggleLighting(); // Add more complex lighting (Requirement 4)
 
                 // Set up the Web GL renderer.
                 renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -154,7 +150,6 @@
             function drawCube() {
 				const cubeGeometry = new THREE.BoxGeometry(2, 2, 2); // Create 2x2x2 cube, corner points: (-1,-1,-1) and (1,1,1)
 				const textureLoader = new THREE.TextureLoader(); // Used to load in the textures.
-				// const materialOld = new THREE.MeshPhongMaterial({color: 0x3399ff}); // Initial material used
 				const material = [
 					new THREE.MeshPhongMaterial({map: textureLoader.load('resources/cube/right.png')}),
 					new THREE.MeshPhongMaterial({map: textureLoader.load('resources/cube/left.png')}),
@@ -220,7 +215,7 @@
 						function (error) {console.log('An error happened');}
 				);
 
-				loader.load('resources/island/scene.gltf', function (object) { // https://sketchfab.com/3d-models/map-gta5-f622784b2fa9453fb20821afb74a9cb6#download
+				loader.load('http://gavriilidis.me/CM20219-WebGL-Coursework-2020-21/resources/island/scene.gltf', function (object) { // https://sketchfab.com/3d-models/map-gta5-f622784b2fa9453fb20821afb74a9cb6#download
 							island = object.scene;
 							island.scale.set(1/100,1/100,1/100);
 							island.translateOnAxis(new THREE.Vector3(0, 1, 0), -20);
@@ -537,7 +532,7 @@
 
 			// https://andreasrohner.at/posts/Web%20Development/JavaScript/Simple-orbital-camera-controls-for-THREE-js/?fbclid=IwAR13GLUfawu5tk7i8xx3piSFGSDfvpxTS0Kr8T593UWUrB_ZhBal2OuxK5A
 			function orbitControl() {
-				camera.position.sub(viewPoint);
+				camera.position.sub(viewPoint); // moving the lookat point to the origin
 
 				const rad = camera.position.length();
 				let theta = Math.acos(Math.min(Math.max(camera.position.y / rad, -1), 1)); // polar angle
