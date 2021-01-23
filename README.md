@@ -1,1 +1,1 @@
-# CM20219-WebGL-Coursework-2020-21
+# Visual Computation Project
