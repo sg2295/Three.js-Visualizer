@@ -8,11 +8,10 @@ The final implementation included a total of 5 models, 4 of which were capable o
 - Recreated many of the existing Three.js controls, including orbit camera controls, using low-level functions/resources. 
 - Manipulated 3D Objects using mathematical operations.
 ## Demo
-The finished project includes a total of 5 models, 4 of which can move around in the environment.
-You can view the final outcome of the project here: http://gavriilidis.me/Three.js-Visualizer/Index.html
+You can interact with the finished project by going to: http://gavriilidis.me/Three.js-Visualizer/Index.html
 ![General Demo Image](https://github.com/sg2295/Three.js-Visualizer/blob/master/resources/demo_2.png)
 > Please note that it takes some time to load all the 3D Objects/Models used
-## Controls
+### Controls
 Key Binding | Event
 ------------|------
 [1],[2],[3] | Rotate Cube/Model about -x, -y, -z axis
