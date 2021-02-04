@@ -2,7 +2,7 @@ The learning outcomes of this project included:
   Recreating many of the existing Three.js controls, including orbit camera controls, using only low-level functions and resources
   Using appropriate mathematical operations to manipulate 3D objects
   Testing and documenting a graphics interaction system
-  Develop code capable of interacting with JavaScript events (key precces, mouse clicks/position etc.)
+  Develop code capable of interacting with JavaScript events (key presses, mouse clicks/position etc.)
 
 Demo: 
   You can view the final outcome of the project here: http://gavriilidis.me/Three.js-Visualizer/Index.html
