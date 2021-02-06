@@ -1,17 +1,17 @@
 # Three.js Visualizer
-### About
+## About 📜
 Developed, documented, and tested a graphics interaction system.
 The final implementation included a total of 5 models, 4 of which were capable of moving around in the environment, a controllable skybox, and lighting options. Additionally, in this project I attempted to recreate the realistic movement of two aircraft, by manipulating their rigid 3D objects using mathematics.
-### Learning Outcomes
+## Learning Outcomes 📚
 - Developed code capable of interacting with JavaScript events. 
 - Tested and documented a graphics interaction system. 
 - Recreated many of the existing Three.js controls, including orbit camera controls, using low-level functions/resources. 
 - Manipulated 3D Objects using mathematical operations.
-## Demo
+## Demo 💻
 You can interact with the finished project by going to: http://gavriilidis.me/Three.js-Visualizer/Index.html
-![General Demo Image](https://github.com/sg2295/Three.js-Visualizer/blob/master/resources/demo_2.png)
+[![Use the application](https://github.com/sg2295/Three.js-Visualizer/blob/master/resources/demo_2.png)](http://gavriilidis.me/Three.js-Visualizer/Index.html)
 > Please note that it takes some time to load all the 3D Objects/Models used
-### Controls
+### Controls 🎮
 Key Binding | Event
 ------------|------
 [1],[2],[3] | Rotate Cube/Model about -x, -y, -z axis
