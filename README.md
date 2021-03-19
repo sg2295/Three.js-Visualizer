@@ -9,18 +9,18 @@ The final implementation included a total of 5 models, 4 of which were capable o
 - Manipulated 3D Objects using mathematical operations.
 ## Demo 💻
 You can interact with the finished project by going to: http://gavriilidis.me/Three.js-Visualizer/Index.html
-[![Use the application](https://github.com/sg2295/Three.js-Visualizer/blob/master/resources/demo_2.png)](http://gavriilidis.me/Three.js-Visualizer/Index.html)
+[![Demo of the application](https://github.com/sg2295/Three.js-Visualizer/blob/master/resources/demo.gif)](http://gavriilidis.me/Three.js-Visualizer/Index.html)
 > Please note that it takes some time to load all the 3D Objects/Models used
 ### Controls 🎮
 Key Binding | Event
 ------------|------
-[1],[2],[3] | Rotate Cube/Model about -x, -y, -z axis
-[E],[V],[F] | Change Render Mode (Edges, Vertices, Face)
-[W],[A],[S],[D] & arrow keys |  Move the Camera
-[Mouse Button] | Orbit the camera about an arbitrary point
-[N] | Show the Cube's outline and the Model fit inside it
-[M] | Toggle between the Cube/Model Modes
-[L] | Toggle between Day/Night Modes
-[H] | Displays the help text
-[R] | Reset the Camera
-[0] | Reset the Cube/Model's rotation
+`1`,`2`,`3` | Rotate Cube/Model about -x, -y, -z axis
+`E`,`V`,`F` | Change Render Mode (Edges, Vertices, Face)
+`W`,`A`,`S`,`D` & arrow keys |  Move the Camera
+`Mouse Button` | Orbit the camera about an arbitrary point
+`N` | Show the Cube's outline and the Model fit inside it
+`M` | Toggle between the Cube/Model Modes
+`L` | Toggle between Day/Night Modes
+`H` | Displays the help text
+`R` | Reset the Camera
+`0` | Reset the Cube/Model's rotation
